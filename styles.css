@@ -2,8 +2,8 @@
   list-style-type: none;
 }
 
-.hide {
-  display:none;
+body {
+  background-color: #303030;
 }
 
 header {
@@ -13,6 +13,7 @@ header {
   margin:0;
   padding:0;
 }
+
 .content {
   display: flex;
 }
@@ -39,19 +40,23 @@ header {
   height: 200px;
 }
 
-.imgBox {
-  width: 28%;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  flex-direction: row;
+
+.imgDiv {
+  color: white;
+  border-bottom: grey solid 3px;
+}
+.imgDiv:hover {
+  opacity: 0.7;
 }
 .imageCover {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 125px;
-  background: linear-gradient(cyan,orange);
+  height: 200px;
+
+}
+.caption {
+  text-align: center;
 }
 
 .albumCover {
@@ -72,7 +77,24 @@ header {
   border-bottom: 5px solid grey;
 }
 
+.imageTitle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  clear: left;
+  display: flex;
+  border-bottom: 5px solid grey;
+}
+
 .albumTitleText {
+  margin: 0 auto;
+  line-height: 75px;
+  height: 75px;
+  color: grey;
+}
+
+.imageTitleText {
   margin: 0 auto;
   line-height: 75px;
   height: 75px;
@@ -125,7 +147,7 @@ header {
   display: flex;
 }
 .imageGalleryHeaderText {
-  color: black;
+  color: white;
   height: 100px;
   line-height: 100px;
   margin: 0 auto;
@@ -137,4 +159,23 @@ header {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.overlay {
+  background:rgba(0,0,0, .5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+  text-align:center;
+}
+
+.overlay img {
+  margin-top: 10%;
+}
+
+.overlay p {
+  color: white;
 }

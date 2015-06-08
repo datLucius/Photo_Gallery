@@ -59,7 +59,10 @@ $(document).ready(function() {
     overlay.append(caption);
 
     overlay.removeClass('hide');
-
   });
+
+    overlay.click(function(){
+    overlay.hide();
+    });
 
 });
